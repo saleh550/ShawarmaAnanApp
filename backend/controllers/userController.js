@@ -16,7 +16,8 @@ const generateToken=(id)=>{
 
 const checkVerification=asyncHandler(async(req,res)=>{
     const {userCode,currentCode,phoneNumber}=req.body
-    if(userCode===currentCode){
+    console.log(userCode+'ssss'+currentCode)
+    if(userCode==currentCode){
         try {
             const userIsExist=await User.findOne({phoneNumber:phoneNumber})
             if(userIsExist){
@@ -44,15 +45,17 @@ const checkVerification=asyncHandler(async(req,res)=>{
         throw new Error("Your code is incorrect!")
     }
 })
+//@Desc create new code and send it to the user phone
+//@route 
 const creatVerification=asyncHandler(async(req,res)=>{
     const {phoneNumber}=req.body
-    
+    console.log(req.body)
     //check the digits is it numbers 
-    const isNumeric = /^[0-9]+$/.test(phoneNumber);
-    if(!isNumeric){
-        res.status(400);
-        throw new Error("Your phone number contains non-numeric characters ")
-    }
+    // const isNumeric = /^[0-9]+$/.test(phoneNumber);
+    // if(!isNumeric){
+    //     res.status(400);
+    //     throw new Error("Your phone number contains non-numeric characters ")
+    // }
 
     //check the phone number 
     if(phoneNumber.length!=10){
@@ -65,6 +68,7 @@ const creatVerification=asyncHandler(async(req,res)=>{
     const newPhoneNumber ='+972'+digits
     let randomN=Math.floor(Math.random()*90000)+100000;
     try {
+        console.log(newPhoneNumber+'test'+phoneNumber)
         client.messages
         .create({
            body: `Welcome To ShawarmaAnan Website - Your Code is : ${randomN}`,
@@ -74,7 +78,8 @@ const creatVerification=asyncHandler(async(req,res)=>{
         .then(message => console.log("message"));
         res.json({phoneNumber:phoneNumber,code:randomN})
     } catch (error) {
-        res.json(error.message)
+        res.status(400)
+        throw new Error(error.message)
     }
 
 
