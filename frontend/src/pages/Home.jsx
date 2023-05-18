@@ -1,5 +1,7 @@
 import { useState } from "react"
 import Header from "../components/Header"
+import Card from "../components/Card"
+import ListCards from "../components/ListCards"
 
 
 function Home(){
@@ -8,7 +10,10 @@ function Home(){
        
        <div>
        <Header/>
-            <h1>home</h1>
+       <ListCards/>
+
+
+
        </div>
     </>)
 }
