@@ -92,7 +92,7 @@ const data3=[
 function ListCards(){
     return(<>
     <div className="mb-4">
-    <h2 class="text-center border-top border-bottom text-secondary border-secodary " style={{marginTop:"70px"}}><span>מנות</span></h2>
+    <h2 className="text-center   text-dark border-dark text-animation" style={{marginTop:"70px"}}><span className="border-bottom border-dark border-2">מנות</span></h2>
         <div className="row ">
         {data.map((item)=>
             <>
@@ -102,7 +102,9 @@ function ListCards(){
             </>
         )}
         </div>
-    <h2 class="text-center border-top border-bottom text-secondary border-secodary mt-5" ><span>ראשוניות</span></h2>
+        <hr/>
+
+    <h2 class="text-center   text-dark border-dark text-animation mt-5" ><span className="border-bottom border-dark border-2">ראשוניות</span></h2>
     <div className="row ">
         {data2.map((item)=>
             <>
@@ -112,7 +114,8 @@ function ListCards(){
             </>
         )}
         </div>
-    <h2 class="text-center border-top border-bottom text-secondary border-secodary mt-5" ><span>משקאות</span></h2>
+        <hr/>
+    <h2 class="text-center   text-dark border-dark text-animation mt-5" ><span className="border-bottom border-dark border-2">משקאות</span></h2>
     <div className="row ">
         {data3.map((item)=>
             <>

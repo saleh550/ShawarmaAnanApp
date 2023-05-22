@@ -2,7 +2,7 @@ import {AiOutlineLike} from 'react-icons/ai'
 function Card( {url,name,desc,price}){
     return(<>
 
-      <article class="food-card mt-5">
+      <article class="food-card mt-5 show-element">
         <img class="card__image" src={url} />
         <div dir="rtl" class="card__data">
           <div  class="card__info">
