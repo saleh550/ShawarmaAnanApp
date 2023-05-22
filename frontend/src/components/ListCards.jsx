@@ -85,7 +85,7 @@ const data3=[
     {
         name:"זכוכית",
         desc:"בקבוק זכוכית 350 מ'ל",
-        url:require('../images/My project (20).png'),
+        url:require('../images/medum_Battle3.png'),
         price:"10 שח"
     }
 ]
