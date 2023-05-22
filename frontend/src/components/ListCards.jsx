@@ -15,7 +15,7 @@ const data=[
     {
         name:"בגט שווארמה",
         desc:"160 גרם שווארמה עגל כולל תוספת ירקות",
-        url:require('../images/bagit_Shawarma.png'),
+        url:require('../images/bagit_Shawarma2.png'),
         price:"44 שח"
     }, 
     {
@@ -33,13 +33,13 @@ const data=[
     {
         name:"בגט חזה עוף",
         desc:"160 גרם חזה עוף כולל תוספת ירקות",
-        url:require('../images/bagit_Chicken.png'),
+        url:require('../images/bagit_Chicken2.png'),
         price:"35 שח"
     },
     {
         name:"פיתה חזה עוף",
         desc:"140 גרם חזה עוף",
-        url:require('../images/peta_Chicken.png'),
+        url:require('../images/peta_Chicken2.png'),
         price:"30 שח"
     },
     {
@@ -59,13 +59,13 @@ const data2=[
     {
         name:"צ'יפס גדול",
         desc:"ציפס גדול בצלחת",
-        url:require('../images/chips.png'),
+        url:require('../images/chips2.png'),
         price:"20 שח"
     },
     {
         name:"צ'יפס קטן",
         desc:"ציפס קטן בצלחת",
-        url:require('../images/chips.png'),
+        url:require('../images/chips2.png'),
         price:"15 שח"
     }
 ]
@@ -85,7 +85,7 @@ const data3=[
     {
         name:"זכוכית",
         desc:"בקבוק זכוכית 350 מ'ל",
-        url:require('../images/medum_battle.png'),
+        url:require('../images/My project (20).png'),
         price:"10 שח"
     }
 ]

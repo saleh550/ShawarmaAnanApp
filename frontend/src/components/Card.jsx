@@ -1,3 +1,4 @@
+import {AiOutlineLike} from 'react-icons/ai'
 function Card( {url,name,desc,price}){
     return(<>
 
@@ -9,7 +10,7 @@ function Card( {url,name,desc,price}){
             <p>{desc}</p>
           </div>
           <h3 class="card__price">{price}</h3>
-          <button class="card__add">+</button>
+          <button class="card__add"><AiOutlineLike/></button>
         </div>
       </article>
 
