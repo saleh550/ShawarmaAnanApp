@@ -182,8 +182,18 @@ body {
 
   /* text animation  */
   .text-animation {
+    font-size: 3rem;
+    font-family: "Fira Sans",sans-serif;
+    color:rgb(255,215,0);;
+    text-shadow: 1px 1px 0px #4e4f4c;
+    animation-duration: 1s;
     animation: move 3s;
     -webkit-animation: move 1s;
+
+  }
+  .category-title{
+    border-bottom: 3px dotted #4e4f4c;
+    border-bottom-style:dotted #4e4f4c;
   }
 
   @keyframes move {
